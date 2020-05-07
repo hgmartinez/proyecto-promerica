@@ -1,0 +1,473 @@
+.p-30 {
+     padding: 30px !important;
+}
+
+.ui-autocomplete{
+z-index: 99999 !important;
+}
+
+ .vertical2 {
+    /*linea vertical usada en el login*/
+     height:3em;
+     background-color:#003c72;
+     border:none;
+     width: 1px;
+     margin-top: 0px;
+}
+
+ #botones{
+     background-color: #003c72;
+    /*fd8d21*/
+     width: 100%;
+     margin-left: -12px;
+     color: white;
+     font-size: 12px;
+     border-radius: 0px 0px 0px 0px;
+     -moz-border-radius: 0px 0px 0px 0px;
+     -webkit-border-radius: 0px 0px 0px 0px;
+}
+.texto-up-derecha{
+  
+}
+.msgError {
+    color: red;
+    text-shadow: -0.5px 1px 0.5px #FFF;
+}
+.sub-barra{
+    padding-left: 18px;
+    padding-right: 19px; 
+    width: 63%;
+    height: 31.3px;    
+}
+ #botones:hover{
+     background-color: #003c72;
+}
+.input-group-btn>.btn {
+    position: relative;
+    float: left;
+    border-radius: 0px 0px 0px 0px;
+}
+ .select {
+     position: relative;
+     display: block;
+     width: 100%;
+     height: 2.5em;
+     line-height: 3;
+     background: #bf1e2d;
+     overflow: hidden;
+     border-radius: .25em;
+     color: white;
+}
+/* select {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0 0 0 .5em;
+     color: #fff;
+     cursor: pointer;
+}*/
+
+/*boton search en la vista search*/
+ .btn-azul{
+     background-color: #003c72;
+     color: white;
+}
+/*boton flotante*/
+ .my-float{
+     margin-top:5px;
+}
+
+
+/*clases para bordes*/
+ .borde-uno-top{
+     margin-top:1em;
+}
+ .borde-dos-top{
+     margin-top:2em;
+}
+/*div con todo el contenido*/
+ .div-contenido-centro{
+     width: 100%;
+     height: 98%;
+}
+/*TABLA*/
+/*panel contenedor de la tabla en revenue.html*/
+ .tabla{
+     overflow: scroll;
+     height: 37em;
+     background-color: white;
+     font-size: 12px;
+     margin-bottom: 10px;
+}
+ .color-i{
+     color: #003c72;
+}
+/* MENU ACORDEON */
+
+
+/*ventana modal*/
+ .i-modal{
+     max-width: 350px;
+}
+ .i-modal .modal-header{
+     background-color: #bf1e2d;
+    color: #0069b3;
+    text-align: center;
+}
+ .i-modal .modal-body{
+     background-color: white;
+}
+
+
+.btn-lineas {
+    display: inline-block;
+    margin: 0px;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    padding: 6px 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    border-image: initial;
+    border-radius: 0px;
+    width: 15%;
+}
+.shadow-lineas-container{
+    box-shadow: 3px 5px 10px grey;
+    -webkit-box-shadow: 3px 5px 10px grey;   
+    background-color: #fff;
+}
+ .select-company{
+     width: 60px;
+     font-size: 12px;
+}
+/*separadores de acordeon*/
+ .line-acordeon-right{
+     margin-top:0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+     width: 90%;
+    height: 1px;
+    background-color: white;
+}
+ .div-line{
+     background-color: #ccc;
+     height: 2px;
+}
+.form-group-vertical {
+    display: flex;
+    align-items: center;
+}
+/*separadores de acordeon izquierdo*/
+ .line-acordeon-left{
+     margin-top:0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+     width: 90%;
+    height: 1px;
+    background-color: #ccc;
+}
+ .div-line-left{
+     background-color: white;
+     height: 2px;
+}
+/*select dentro del formulario*/
+ .select-form{
+     height: 28px;
+    font-size: 12px;
+}
+.form-control-Buscar {
+    display: block;
+    width: 100%;
+    height: 33px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.control-Buscar-catalogo{
+    display: block;
+    width: 80%;
+    height: 33px;
+    padding: 6px 12px;
+    float: left;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control-combo {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ffffff;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+/*CSS PARA LAS  ACTIVITIES*/
+.select-activity{
+     cursor: pointer;
+     margin-bottom: 0px;
+}
+.bs-callout {
+    padding: 10px 10px;
+    margin: 4px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    font-family:'Helvetica Neue', Helvetica,Arial,sans-serif !important;    
+    width: 100%;
+    box-shadow: 1px 2px 5px grey;
+    -webkit-box-shadow: 1px 2px 5px grey;   
+   
+}
+.bs-callout:hover{
+    background-color: #ccc;
+}
+
+
+.bs-callout h5 {
+    margin-top: 0;
+    margin-bottom: 4px;
+    color: #0070c8;
+    font-family:'Helvetica Neue', Helvetica,Arial,sans-serif !important; 
+    text-align: justify;
+}
+.bs-callout p:last-child {
+    margin-bottom: 0;
+}
+
+.bs-callout .bodyCallout{
+    display: block;
+    padding-bottom: 2.5em;
+    font-size:15px;
+    
+}
+.bs-callout .calloutTc{    
+    height: 33px;
+    width: 100%;
+    margin-bottom: 0.5em;
+    font-size:15px;
+}
+.bs-callout .bodyCallout div{
+    display: block;
+    width: 32%;
+    float: left;
+    margin-left: 0.1em;
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    padding-bottom: 0.5em;   
+    font-size:15px;
+}
+.bs-callout+.bs-callout {
+    margin-top: -5px;
+}
+.bs-callout-default {
+    border-left-color: #777;
+}
+.bs-callout-default h4 {
+    color: #428bca;
+}
+
+.bs-callout-complete {
+    border-left-color: #92d14f;
+}
+
+.bs-callout-reprogramada {
+    border-left-color: #fe0000;
+}
+
+.bs-callout-improgress {
+    border-left-color: #ff9900;
+}
+
+.text-muted {
+    color: #6c757d!important;
+}
+.card-subtitle {
+    margin-top: -.375rem;
+    margin-bottom: 0;
+}
+/*Fin actitivies CSS*/
+
+/*estilo texto info cliente*/
+.texto-info-client{
+    font-size: 1.1em;
+    color: #bf1e2d;
+    font-family:'Helvetica Neue', Helvetica,Arial,sans-serif !important; 
+    padding: 0px;
+    margin-bottom: 0px !important;
+    font-weight: bold;
+}
+.row-grid-texto{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.col-clean{
+    margin: 0px;
+    
+}
+.col-grid-text{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+/*fin estilo texto info cliente*/
+
+/*select color status*/
+
+/* The container-select-color */
+.container-select-color {
+	float:left;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-select-color input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-select-color input:checked ~ .checkmark:after {
+    display: block;
+	box-shadow: 1px 2px 2px grey;
+    -webkit-box-shadow: 1px 2px 2px grey; 
+}
+
+/* Style the checkmark/indicator */
+.container-select-color .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 9px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotax(45deg);
+}
+
+.checkmark-color-complete {
+    background-color: #92d14f;
+}
+
+.checkmark-color-reprogramada {
+    background-color: #fe0000;
+}
+
+.checkmark-color-improgress {
+    background-color: #ff9900;
+}
+/*fin select color status*/
+/*inicio  del carrusel*/
+.slick-dots{
+    display:none !important;
+}
+.slick-prev:before,
+.slick-next:before {
+      color: black !important;
+}
+    
+.slick-prev, .slick-next{
+     width: 21px !important;        
+    }
+    
+    .slick-next{
+        right: -15px;
+    }
+    .slick-prev{
+        left: -17px;
+    }
+    
+    
+/*fin del carrusel*/
+/**Inicio  de  estilo para  tabla**/
+  select#select-tblFollowActivities{
+   height: 30px;    
+}
+.dataTables_wrapper .dataTables_length{
+    display: none;
+}
+table.dataTable thead {
+    background-color: gray !important;
+}
+/**Fin de  estilo paara la  tabla**/
+
+.ui-paginator.ui-paginator-bottom.ui-widget-header.ui-corner-bottom{
+    display: none;
+}
+
+
+.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+    max-height: 350px;
+    overflow: scroll;
+    
+}

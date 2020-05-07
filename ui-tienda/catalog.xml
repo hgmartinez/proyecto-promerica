@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ClienteWs/ClienteWs?WSDL" uri="src/conf/xml-resources/web-service-references/ClienteWs/wsdl/localhost_8080/ClienteWs/ClienteWs.wsdl"/>
+    <system systemId="http://localhost:8080/ClienteWs/ClienteWs?xsd=1" uri="src/conf/xml-resources/web-service-references/ClienteWs/wsdl/localhost_8080/ClienteWs/ClienteWs.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/OrdenWs/OrdenWs?WSDL" uri="src/conf/xml-resources/web-service-references/OrdenWs/wsdl/localhost_8080/OrdenWs/OrdenWs.wsdl"/>
+    <system systemId="http://localhost:8080/OrdenWs/OrdenWs?xsd=1" uri="src/conf/xml-resources/web-service-references/OrdenWs/wsdl/localhost_8080/OrdenWs/OrdenWs.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ProductoWs/ProductoWs?WSDL" uri="src/conf/xml-resources/web-service-references/ProductoWs/wsdl/localhost_8080/ProductoWs/ProductoWs.wsdl"/>
+    <system systemId="http://localhost:8080/ProductoWs/ProductoWs?xsd=1" uri="src/conf/xml-resources/web-service-references/ProductoWs/wsdl/localhost_8080/ProductoWs/ProductoWs.xsd_1.xsd"/>
+</catalog>

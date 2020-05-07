@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Productos</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <p:layout fullPage="true">
+
+                <p:layoutUnit position="north" size="100" resizable="true" closable="true" collapsible="true">
+                    Header
+                </p:layoutUnit>
+
+                <p:layoutUnit position="south" size="100" maxSize="100%" closable="true" collapsible="true">
+                    <footer class="my-5 pt-5 text-muted text-center text-small">
+                        <p class="mb-1">&copy; 2020 Henry Giovani Martinez</p>
+                        
+                    </footer>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="west" size="180" header="Left" collapsible="true">
+                    <p:menu>
+                        <p:submenu label="Mantenimientos">
+                            <p:menuitem value="Cliente" action="#{menu.producto()}" />
+                            <p:menuitem value="Orden" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Producto" action="#{menu.producto()}"  />
+                           
+
+                        </p:submenu>
+
+                    </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center" style="border:0px !important">
+                    <h:form id="formCliente"> 
+                        <p:panel id="basic" header="Registro de Productos" style="margin-bottom:20px">
+                            <p:growl id="msgs" />
+                            <h:panelGrid columns="2" cellpadding="10">
+                                    <p:outputLabel for="name" value="Nombre:" />
+                                    <p:inputText id="name" value="#{productoManage.producto.nombre}" />
+                                    
+                                    <p:outputLabel for="precio" value="Precio" />
+                                    <p:inputText id="precio" value="#{productoManage.producto.precio}" />
+                                   <p:outputLabel for="description" value="Descripcion" />
+                                   <p:inputText id="description" value="#{productoManage.producto.description}" />
+                               
+                            </h:panelGrid>
+                             <f:facet name="footer">
+                                 <p:commandButton value="Guardar" style="display:#{productoManage.editar ne true?'block':'none'}" actionListener="#{productoManage.guardar()}"></p:commandButton>
+                                        <p:commandButton value="Editar" style="display:#{productoManage.editar eq true?'block':'none'}" actionListener="#{productoManage.editar()}"></p:commandButton>
+                                        
+                            </f:facet>
+                        </p:panel>
+                     </h:form>
+                    <h:form>
+                        <p:panel id="basic" header="Listado de Productos" style="margin-bottom:20px">
+                            <p:dataTable var="producto" value="#{productoManage.listar}">
+                                <p:column headerText="Id">
+                                    <h:outputText value="#{producto.id}" />
+                                </p:column>
+
+                                <p:column headerText="Nombre">
+                                    <h:outputText value="#{producto.nombre}" />
+                                </p:column>
+
+                                <p:column headerText="Precio">
+                                    <h:outputText value="#{producto.precio}" />
+                                </p:column>
+                                <p:column headerText="Descripcion">
+                                    <h:outputText value="#{producto.description}" />
+                                </p:column>
+
+                                <p:column headerText="Accion">
+                                    <p:commandButton value="Eliminar"  actionListener="#{productoManage.eliminar(client.id)}">
+                                        <f:ajax  execute="@this" render="@this formCliente"  />
+                                    </p:commandButton>
+                                   <p:commandButton value="Editar"  actionListener="#{productoManage.prepararEditar(client.id)}">
+                                       <f:ajax  execute="@this" render="formCliente"  />
+                                   </p:commandButton>
+                                            
+                                </p:column>
+                            </p:dataTable>
+                        </p:panel>
+                    </h:form>
+                   
+                </p:layoutUnit>
+
+            </p:layout>
+
+        </h:body>
+
+    </f:view>
+</html>
+
